@@ -1,0 +1,24 @@
+ 80% {
+        opacity             : 1;
+        background-size     : 100% 100%;
+        /* background-repeat   : no-repeat; */
+        object-fit: cover;
+       
+        background-image    : url('../Img/Cabecera/header3.jpg');
+        /* background-size  : cover; */
+       
+    }
+
+    40% {
+        opacity             : 1;
+        background-size     : 100% 100%;
+        /* background-repeat   : no-repeat; */
+        object-fit: cover;
+        background-image    : url('../Img/Cabecera/header4.jpg');
+        /* background-size  : cover; */
+      
+    }
+
+    height: 250px;
+width: 250px;
+object-fit: cover;

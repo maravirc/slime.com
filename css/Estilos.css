@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding     : 10px 0;
+    width       : 90%;
+    max-width   : 1000px;
+    margin      : auto;
+    /* border   : 1px solid red; */
+    /* overflow : hidden; */
+
+
+}
+
+/* sliner  */
+
+
+header {
+
+
+    /* border            : 1px solid red; */
+    /* height            : 300px;
+    width             : 100%; */
+    /* background-size: 100% 100%; */
+
+    /* animation: header 15s  infinite alternate linear; */
+
+    animation          : header 10s ease 0s infinite normal forwards;
+    animation-direction: alternate;
+}
+
+@keyframes header {
+    0% {
+        opacity         : 1;
+        background-size : 100% 100%;
+        object-fit      : cover;
+        background-image: url(../Img/Cabecera/header1.jpg);
+
+    }
+
+    25% {
+        opacity         : 1;
+        background-size : 100% 100%;
+        object-fit      : cover;
+        background-image: url(../Img/Cabecera/header2.jpg);
+
+
+    }
+
+    50% {
+        opacity         : 1;
+        background-size : 100% 100%;
+        object-fit      : cover;
+        background-image: url(../Img/Cabecera/header3.jpg);
+
+
+    }
+
+    100% {
+        opacity         : 1;
+        background-size : 100% 100%;
+        object-fit      : cover;
+        background-image: url(../Img/Cabecera/header4.jpg);
+
+
+
+    }
+}
+
+/* termina el sline */
+
+
+
+.titulo {
+    color        : #642a73;
+    font-size    : 35px;
+    text-align   : center;
+    margin-bottom: 60px;
+}
+
+/* 
+header */
+header {
+    width                   : 100%;
+    height                  : 600px;
+    /* background           : #0f0f0e; */
+    /* fallback for old browsers */
+    /* background           : -webkit-linear-gradient(to right, #000000be, #080806ab), url(../Img/Cabecera/header1.jpg);
+
+    background              :  linear-gradient(to right, #070807d0, #0f0f0dcc), url(../Img/Cabecera/header2.jpg);
+       */
+    /* background           : -webkit-linear-gradient(to right, #000000be, #080806ab), url(../Img/Cabecera/header3.jpg);
+
+    background              :  linear-gradient(to right, #070807d0, #0f0f0dcc), url(../Img/Cabecera/header4.jpg); */
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    object-fit     : cover;
+    position       : relative;
+}
+
+header:before {
+    content         : '';
+    position        : absolute;
+    top             : 0;
+    bottom          : 0;
+    left            : 0;
+    right           : 0;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+header h1,
+h2 {
+    color   : #fff;
+    position: relative
+}
+
+header .textos-header {
+
+    display        : flex;
+    height         : 430px;
+    width          : 100%;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    text-align     : center;
+
+}
+
+
+
+.textos-header h1 {
+    font-size: 50px;
+    color    : white;
+
+}
+
+.textos-header h2 {
+    font-size  : 30px;
+    font-weight: 300;
+    color      : #fff;
+    font-weight: bold;
+
+}
+
+/* termina el header */
+
+/* nav */
+nav {
+    text-align: right;
+    padding   : 30px 50px 0 0;
+}
+
+nav a {
+    color          : #fff;
+    font-weight    : 300;
+    text-decoration: none;
+    margin-right   : 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+
+}
+
+/* termina nav */
+
+/* con el div wave */
+.wave {
+    position: absolute;
+    bottom  : 0;
+    width   : 100%;
+}
+
+/* terminamos con el wav */
+
+/* Abut us */
+
+/* main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+} */
+.contenedor-sobre-nosotros {
+    display        : flex;
+    justify-content: space-evenly;
+    padding        : 1px;
+}
+
+.imagen-about-us {
+    width       : 54%;
+    padding-left: 96px;
+    /* border   : solid 1px red; */
+    height      : 20%;
+
+
+}
+
+.sobre-nosotros .contenedor-textos {
+    width: 48%;
+}
+
+.contenedor-textos h3 {
+    margin-bottom: 15px;
+    font-size    : 25px;
+
+}
+
+.contenedor-textos h3 span {
+    background   : #642a73;
+    color        : white;
+    border-radius: 50px;
+    display      : inline-block;
+    text-align   : center;
+    width        : 33px;
+    height       : 36px;
+    padding      : -1px;
+    box-shadow   : 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right : 5px;
+
+}
+
+.contenedor-textos p {
+    padding     : 0px 200px 30px 15px;
+    font-weight : 300%;
+    text-align  : justify;
+    /* font-size: 1.3em; */
+    font-size   : 20px;
+}
+
+/* Galeria */
+.portafolio {
+    background: #f2f2f2;
+    overflow  : hidden;
+
+}
+
+.galeria-port {
+    display        : flex;
+    justify-content: space-evenly;
+    flex-wrap      : wrap;
+}
+
+.image-port {
+    width        : 24%;
+    margin-bottom: 10px;
+    /* height    : 200px; */
+    overflow     : hidden;
+    position     : relative;
+    cursor       : pointer;
+    box-shadow   : 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.image-port img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: cover;
+    display   : block;
+}
+
+.hover-galeria {
+    position       : absolute;
+    top            : 0;
+    width          : 100%;
+    height         : 100%;
+    transform      : scale(0);
+    background     : hsla(310, 79%, 32%, 0.76);
+    transition     : transform .5s;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    display        : block;
+
+
+}
+
+/* 
+.hover-galeria img{
+    width: 50px;
+} */
+.hover-galeria p {
+    color: #fff;
+
+}
+
+.image-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* 
+
+
+
+/* clientes */
+.cars {
+    display        : flex;
+    justify-content: space-evenly;
+    /* border      :solid 1px #642a73; */
+    padding        : 20px;
+
+
+}
+
+.scrol {
+    overflow: scroll;
+
+    scrollbar-width: 20px;
+    height         : 375px;
+    width          : 100%;
+    /* border      : solid 3px #642a73; */
+    padding        : 3px 10px;
+    /* border      : #642a73 5px solid ; */
+    border-radius  : 10px;
+    /* margin      : 2rem auto;
+    background     : #1d538a;
+    overflow       :auto;
+    box-sizing     : border-box; */
+
+
+}
+
+
+.cars .card {
+    background     : #4d0686;
+    display        : flex;
+    width          : 46%;
+    height         : 200px;
+    align-items    : center;
+    justify-content: space-evenly;
+    border-radius  : 5px;
+    box-shadow     : 0 0 6xp 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.cars .card img {
+    width        : 100px;
+    height       : 100px;
+    object-fit   : cover;
+    border       : 3px solid #fff;
+    border-radius: 50%;
+    display      : block;
+
+}
+
+.cars .card .contenido-texto-card {
+    width: 60%;
+    color: #fff;
+
+}
+
+.cars .car .contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* ur team  */
+
+.about-services {
+    background    : #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display              : grid;
+    grid-template-columns: auto auto;
+    align-content        : center;
+
+}
+
+.servicio-ind {
+    width     : 80%;
+    text-align: center;
+
+
+}
+
+.servicio-ind img {
+    width: 90%;
+
+}
+
+.servicio-ind h3 {
+    margin: 10px 0;
+}
+
+.servicio-ind p {
+    font-weight: 300;
+    text-align : justify;
+
+}
+
+footer {
+    background: #414141;
+    padding   : 60px 0 30px 0;
+    margin    : hidden;
+    overflow  : hidden;
+}
+
+.contenedor-footer {
+    display        : flex;
+    width          : 90%;
+    justify-content: space-evenly;
+    margin         : auto;
+    padding-bottom : 50px;
+    border-bottom  : 1px solid #ccc;
+}
+
+.content-foot {
+    text-align: center;
+
+}
+
+.content-foot h4 {
+    color         : #fff;
+    border-bottom : 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom : 20px;
+
+}
+
+.content-foot p {
+    color: #fff;
+
+}
+
+.titulo-final {
+    text-align: center;
+    font-size : 24px;
+    margin    : 20px 0 0 0;
+    color     : #9e9e9e;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    header {
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+    }
+
+    .sobre-nosotros .contenedor-textos {
+        width: 100%;
+
+    }
+
+    .imagen-about-us {
+        padding-left: 20px;
+        width       : 90%;
+    }
+
+    /* Galeria */
+    .image-port {
+        width: 44%;
+    }
+
+    /* clientes */
+    .cars {
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+
+    }
+
+    .cars .card {
+        width: 90%;
+    }
+
+    .cars .card:first-child {
+        margin-bottom: 15px;
+    }
+
+    .servicio-cont {
+        /* justify-content: center;
+        flex-direction : column; */
+        display              : grid;
+        grid-template-columns: auto;
+        align-content        : center;
+
+    }
+
+    .servicio-ind {
+        width     : 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1),
+    .servicio-ind:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img {
+        width: 90%;
+    }
+
+    .contenedor-textos h3 span {
+        width  : 33px;
+        height : 36px;
+        padding: -1px;
+    }
+
+    .contenedor-textos p {
+        padding: 0px 30px 30px 15px;
+
+    }
+
+    .appwassap img:hover {
+        width: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    nav {
+        text-align: center;
+        padding   : 30px 0 0 0;
+
+    }
+
+    nav>a {
+        margin-right: 5px;
+
+
+    }
+
+    .textos-header h1 {
+        font-size: 35px;
+
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+    }
+
+    /* Abouts */
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width        : 99%;
+    }
+
+    .sobre-nosotros .contenedor-textos {
+        width: 95%;
+
+    }
+
+    /* Galeria */
+    .image-port {
+        width: 95%;
+    }
+
+    /* clientes */
+    .cars .card {
+        height        : 400px;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .cars .card img {
+        width : 90px;
+        height: 90px;
+    }
+
+    /* footer */
+
+    .contenedor-footer {
+        flex-direction: column;
+
+
+    }
+
+    /* contenedor maspequeños */
+    .cars {
+
+        height: 600px;
+    }
+
+
+
+    .contenedor-textos h3 {
+        margin-bottom: 15px;
+        font-size    : 18px;
+
+    }
+
+    .contenedor-textos p {
+
+        font-size: 20px;
+    }
+
+    .contenedor-textos h3 span {
+        /* background   : #642a73;
+        color        : white;
+        border-radius: 50px;
+        display      : inline-block;
+        text-align   : center; */
+        width           : 30px;
+        height          : 30px;
+        /* padding      : 2px;
+        box-shadow      : 0 0 6px 0 rgba(0, 0, 0, .5);
+        margin-right    : 5px; */
+
+    }
+
+    .titulo {
+
+        font-size: 25px;
+    }
+
+
+    .address {
+        margin-left: 50px;
+    }
+
+
+
+}
+
+/* ImagenDelivery */
+.imgsoport {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-left    : 5%;
+
+
+}
+
+.imgsoport>img {
+    width : 75%;
+    height: 70%;
+}
+
+.deslisar {
+    /* border: solid 1px #af20d3; */
+    position: relative;
+    top     : -10px;
+
+
+
+}
+
+.appwassap img:hover {
+    width: 60px;
+}
+
+.imgsoport {
+    /* animation: imgsoport 5s ease 0s infinite normal forwards; */
+    animation   : imgsoport 12s linear 0s infinite normal forwards;
+    /* animation: imgsoport 3s cubic-bezier(0.80, 0.25, 0.25, 0.86) 0s infinite normal forwards; */
+    /* animation: imgsoport 2s cubic-bezier(0.61, 0, 0.5, 0) 0s infinite normal backwards; */
+}
+
+@keyframes imgsoport {
+    0% {
+        opacity  : 1;
+        transform: translateX(-165%);
+    }
+
+    100% {
+        opacity  : 1;
+        transform: translateX(165%);
+    }
+}
+
+.appwassap {
+    position: fixed;
+    right   : 26px;
+    bottom  : 100px;
+    width   : 60px;
+    z-index : 1000;
+}
+
+.appwassap img {
+    width : 100%;
+    height: auto;
+}
+
+/* .appwassap img:hover{
+    width: 80px;
+  } */
+
+.content-logo {
+    position     : relative;
+    width        : 150px;
+    height       : 50px;
+    margin       : 0 auto;
+    margin-top   : 100px;
+    /* border    : 1px solid red; */
+    background   : rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align   : center;
+
+
+}
+
+.imglogo {
+    position     : relative;
+    width        : 100%;
+    height       : 100%;
+    /* background: rgba(255, 255, 255, 0.801); */
+    margin       : 0 auto;
+    border-radius: 20px;
+
+}
+
+.footer-parrafo {
+    display    : block;
+    text-align : center;
+    padding-top: 10px;
+    font-size  : 20px;
+    color      : white;
+}
+
+.imglogo2 {
+    display      : block;
+    width        : 20%;
+    text-align   : center;
+    margin       : 0 auto;
+    margin-bottom: 20px;
+}
+
+.address {
+    display       : grid;
+    width         : 250px;
+    height        : 70px;
+    /* border     : 1px solid  black; */
+    padding-left  : 15px;
+    padding-bottom: 50px;
+
+}
+
+.address img {
+    width : 100%;
+    height: 100%;
+}
+
+.titulo-final {
+    font-size: 20px;
+}
+
+.address-frinal {
+    display    : block;
+    padding-top: 10px;
+    width      : 250px;
+    margin     : 0 auto;
+}
+
+.icono-subir {
+    position     : fixed;
+    /* /* width  : 2%;
+    height       : 50px; */
+    /* background:yellow; */
+    /* top       : ; */
+    right        : 3%;
+    bottom       : 200px;
+    /* left      : ; */
+    text-align   : center;
+    display      : none;
+    font-size    : 50px;
+
+}
+
+/* .ele{
+    background:red;
+
+} */
+/* .ele img{
+    width: 300px;
+    height:200px;
+    border-radius: 50px;
+   margin-bottom: 100px;
+   
+} */
+@media screen and (max-width: 600px) {
+    .imglogo2 {
+
+        width: 50%;
+    }
+
+    .titulo {
+        font-size: 18px;
+    }
+
+    .titulo-final {
+        font-size: 15px;
+    }
+
+    .address-frinal {
+
+        width: 180px;
+
+    }
+
+    .ele {
+        padding-top: 50px;
+    }
+
+}
+
+/* .img-wassap2{
+    /* border: 3px solid red; */
+/* margin-left:25px; */
+.info {
+    display      : block;
+    text-align   : center;
+    font-size    : 20px;
+    background   : 28a745ff;
+    width        : 60%;
+    margin       : 0 auto;
+    background   : rgba(40, 167, 70, 0.5);
+    margin-top   : 30px;
+    border-radius:30px;
+    font-weight : bold;
+    color:white;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .info{
+        width: 95%;
+        font-size: 15px;
+    }
+    .icono-subir{
+        right        : 10.5%;
+    }
+}
+.servicio-ind{
+    padding-top:50px;
+}
+.titulo{
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 400px) {
+  
+    .sepa{
+        /* font-family: verdana; */
+        /* text-indent: 20px; */
+        float: right;
+        display: flex;
+        align-items: center;
+        word-break:break-all;
+        /* margin: 0 0 1em 1em; */
+    }
+}
